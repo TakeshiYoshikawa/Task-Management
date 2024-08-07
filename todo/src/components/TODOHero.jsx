@@ -12,4 +12,4 @@ function TODOHero({todos_completed, total_todos}) {
     );
 }
 
-export default TODOHero
+export default TODOHero;

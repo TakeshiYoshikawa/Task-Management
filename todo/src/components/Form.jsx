@@ -6,7 +6,7 @@ function Form() {
     };
 
     return (
-        <form className="Form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
             <label htmlFor="todo">
                 <input
                     type="text"
