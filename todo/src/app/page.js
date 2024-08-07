@@ -1,3 +1,9 @@
+/* 
+"use client" solves Error: Event handlers cannot be passed to Client Component props. when
+form component tries to run handleSubmit function onSubmit
+*/
+"use client"
+
 import React from "react";
 import Form from "@/components/Form"
 import Header from "@/components/Header"
