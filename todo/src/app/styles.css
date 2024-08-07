@@ -62,6 +62,10 @@ header {
   padding: 42px;
 }
 
+.todo_header{
+  justify-content: center;
+}
+
 .todohero_section {
   border: 2px solid #c2b39a;
   display: flex;
