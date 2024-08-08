@@ -1,23 +1,22 @@
-function TODOList({todos}) {
+import React from "react"
+
+function TODOList({todos, setTodos}) {
     return(
         <ol className="todo_list">
-            {todos && todos.length > 0 ? 
-                (todos?.map((item, index) => <Item key={index} item={item}/>)) :
-                (<p>Seems lonely in here, what are you up to?</p>)
+            { todos && todos.length > 0 ?
+                (todos?.map((item, index) => ( <Item key={index} item={item} setTodos={setTodos}/>))) :
+                (<p>No tasks registered.</p>)
             }
         </ol>
     );
 }
 
-function Item({item}){
+function Item({item, todos, setTodos}){
     return(
         <li id="item?.id" className="todo_item">
-            <button>
-                <svg>
-                    <circle cx="11.998" cy="11.998" fillRule="nonzero" r="9.998"/>
-                </svg>
-                <p>{item?.title}</p>
-            </button>
+            <p>{item?.title}</p>
+            <form className="edit-form">
+            </form>
             <div className="todo_items_right">
                 <button>
                     <span className="visually-hidden">Edit</span>
