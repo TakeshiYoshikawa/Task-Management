@@ -21,7 +21,7 @@ function Item({item, todos, setTodos}){
     }
 
     return(
-        <li id="item?.id" className="todo_item" onClick={completeTodo}>
+        <li id={item?.id} className="todo_item" onClick={completeTodo}>
             <button className="todo_items_left">
                 <svg
                 clipRule="evenodd"
@@ -37,7 +37,10 @@ function Item({item, todos, setTodos}){
                 >
                     <circle cx={11.998} cy={11.998} fillRule="nonzero" r={9.998}/>
                 </svg>
-            <p>{item?.title}</p>
+
+                <p style={item.is_completed? {textDecoration: "line-through"} : {}}>
+                    {item?.title}
+                </p>
             </button>            
 
             <form className="edit-form">
