@@ -11,12 +11,7 @@ import TODOHero from "@/components/TODOHero";
 import TODOList from "@/components/TODOList";
 
 function Home(){
-  const [todos, setTodos] = React.useState([
-    {title: "Task 1", id: crypto.randomUUID(), is_completed: true},
-    {title: "Task 2", id: crypto.randomUUID(), is_completed: false},
-    {title: "Task 3", id: crypto.randomUUID(), is_completed: false},
-    {title: "Task 4", id: crypto.randomUUID(), is_completed: true},
-  ]);
+  const [todos, setTodos] = React.useState([]);
 
   const todos_completed = todos.filter(
     (todo) => todo.is_completed === true
