@@ -131,8 +131,12 @@ header {
   margin-bottom: 27px;
   gap: 27px;
 }
-.todo_item,
-.edit-form input {
+
+.todo_item:hover{
+  background-color: #1f2940;
+}
+
+.todo_item, .edit-form input {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,6 +148,7 @@ header {
   background-color: #0d0d0d;
   color: #fff;
   padding: 12px;
+  border-radius: 11px;
 }
 
 .edit-form input {
@@ -153,11 +158,11 @@ header {
   border: transparent;
 }
 
-.todo_items_left,
-.todo_items_right {
+.todo_items_left, .todo_items_right {
   display: flex;
   align-items: center;
 }
+
 .todo_items_left {
   background-color: transparent;
   border: none;
